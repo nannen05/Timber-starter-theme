@@ -1,3 +1,4 @@
+var projectURL  = 'http://localhost:8888/timber/';
 
 gulp.task( 'browser-sync', function() {
   browserSync.init( {
@@ -6,7 +7,7 @@ gulp.task( 'browser-sync', function() {
     // @link http://www.browsersync.io/docs/options/
 
     // Project URL.
-    // proxy: projectURL,
+    proxy: projectURL,
 
     // `true` Automatically open the browser with BrowserSync live server.
     // `false` Stop the browser from automatically opening.
